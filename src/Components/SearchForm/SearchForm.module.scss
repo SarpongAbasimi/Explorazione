@@ -1,0 +1,34 @@
+@import '../../styles/themes';
+
+.search {
+  display: flex;
+  background-color:  rgb(56, 57, 64);
+  border-radius: 5px;
+  padding: 5px;
+  .search-icon-container {
+    background-color:  rgb(56, 57, 64);;
+    display: flex;
+    align-items: center;
+    .search-logo {
+      font-size: 18px;
+      padding: 4px;
+      color: #ffff;
+      position: relative;
+      font-weight: 300;
+      background-position-y: center;
+    }
+  }
+  input {
+    width: 200px;
+    height: 28px;
+    caret-color: #ffff;
+  }
+  input[type='text'], textarea {
+    background-color: rgb(56, 57, 64);
+    border: none;
+  }
+  ::placeholder {
+    font-family: $open-sans;
+    padding-left: 5px;
+  }
+}

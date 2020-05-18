@@ -1,0 +1,19 @@
+@import '../../styles/themes';
+
+.card {
+  background-color: $nav-bar-colour;
+  font-family: $open-sans;
+  height: 200px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin: 10px;
+  p {
+    font-size: 15px;
+    font-family: $open-sans;
+  }
+  .toggle-on-container{
+    font-family: $open-sans;
+    height: 50px;
+    display: flex;
+  }
+}

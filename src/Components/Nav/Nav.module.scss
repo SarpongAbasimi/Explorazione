@@ -1,0 +1,15 @@
+@import '../../styles/themes';
+
+.nav {
+  background-color: $nav-bar-colour;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-family: $open-sans;
+  }
+}
