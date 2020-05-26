@@ -1,12 +1,13 @@
 import React,{ useState } from 'react';
-import styles from './App.module.scss';
-import { PostPage } from './Page/Post/Post';
-import { ReactSpringPage } from './Page/ReactSpring/ReactSprint';
+import { DivAnimationPage } from './Page/DivAnimationPage/DivAnimation';
+import { TodoPage } from './Page/ToDoPage/ToDoPage';
+// import { PostPage } from './Page/Post/Post';
+// import { ReactSpringPage } from './Page/ReactSpring/ReactSprint';
 
 function App() {
   return (
     <div>
-      <ReactSpringPage/>
+      <TodoPage />
     </div>
   );
 }
