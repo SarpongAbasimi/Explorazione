@@ -3,6 +3,7 @@ import { ToDoCard } from '../../Components/ToDoCard/ToDoCard';
 import { InputForm } from '../../Components/InputForm/InputForm';
 import { ChangeEvent } from 'react';
 import { FormEvent } from 'react';
+import styles from './ToDoPage.module.scss';
 
 export const TodoPage: React.FunctionComponent = () => {
   const [initialTodo, setIntitialTodo] = useState<string>('')
@@ -20,8 +21,10 @@ export const TodoPage: React.FunctionComponent = () => {
 
   return(
     <>
-    <InputForm initialValue={initialTodo} onHandleHange={handleInputChange} onFormSubmit={handleFormSubmit}/>
-    <ToDoCard listOfTodos={doDos}/>
+    <div className={styles['todo-page']}>
+      <InputForm initialValue={initialTodo} onHandleHange={handleInputChange} onFormSubmit={handleFormSubmit}/>
+      <ToDoCard listOfTodos={doDos}/>
+    </div>
     </>
   )
 };
