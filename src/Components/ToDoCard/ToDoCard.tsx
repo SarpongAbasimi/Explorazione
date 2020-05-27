@@ -1,6 +1,12 @@
 import React from 'react';
 import style from './ToDoCard.module.scss';
 
-export const ToDoCard: React.FunctionComponent = () => {
-    return (<h1 className={style.card}>Hello</h1>);
+
+type ToDoCardProps = {
+    listOfTodos: string[]
+}
+
+export const ToDoCard: React.FunctionComponent<ToDoCardProps> = ({listOfTodos }) => {
+    console.log(listOfTodos)
+return (<div className={style.card}>{listOfTodos.map(e => <li>{e}</li>)}</div>);
 };
