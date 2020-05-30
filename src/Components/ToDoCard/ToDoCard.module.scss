@@ -1,6 +1,19 @@
-.card {
-  background-color: gold;
-  padding: 5px;
-  width: 200px;
-  margin: 5px;
+// .container {
+//   background-color: gold;
+//   padding: 5px;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+.list{
+  list-style-type: none;
+  background-color: red;
+  width: 50%;
+  text-align: center;
+  padding: 4px;
+  margin: 2px;
+  font-size: 14px;
+  color: #ffffff;
 }
