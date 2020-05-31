@@ -17,17 +17,17 @@ export const InputForm: React.FunctionComponent<InputProps> = ({ initialValue, o
     }
   });
 
-   const {o, xyz, color}  = useSpring({
-      o:1,
-      xyz: [10, 20, 5],
-      color: 'green'
-    ,
-    from: {
-      o: 0,
-      xyz: [0, 0, 0],
-      color: 'red'
-    }
-  })
+  //  const {o, xyz, color}  = useSpring({
+  //     o:1,
+  //     xyz: [10, 20, 5],
+  //     color: 'green'
+  //   ,
+  //   from: {
+  //     o: 0,
+  //     xyz: [0, 0, 0],
+  //     color: 'red'
+  //   }
+  // })
 
   const inputChange = (event: ChangeEvent<HTMLInputElement> ) => {
     onHandleHange(event)
